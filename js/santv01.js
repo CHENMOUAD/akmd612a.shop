@@ -12,6 +12,7 @@
   });
 
   function gtagok(url) {
+	  gtag_report_conversion();
      window.open('https://www.googlalab.com/V548E2', '_blank');
   }
   document.addEventListener('DOMContentLoaded', function () {
