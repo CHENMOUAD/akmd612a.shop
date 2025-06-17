@@ -9,22 +9,42 @@
 
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17119288692"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17148533916"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'AW-17119288692');
+  gtag('config', 'AW-17148533916');
 </script>
+
 
 <!-- Event snippet for 点击按钮 conversion page -->
 <script>
   gtag('event', 'conversion', {
-      'send_to': 'AW-17119288692/k7DWCKzPpNsaEPS6juM_',
+      'send_to': 'AW-17148533916/QCrlCNep8twaEJy5h_E_',
       'transaction_id': ''
   });
 </script>
+
+<!-- Event snippet for 点击按钮 conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-17148533916/QCrlCNep8twaEJy5h_E_',
+      'transaction_id': '',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
 
     
   </head>
